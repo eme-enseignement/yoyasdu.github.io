@@ -1,5 +1,6 @@
 body {
     background-color: azure;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -212,6 +213,88 @@ h2 {
     color: rgb(0, 187, 255);
     text-decoration: underline;
 }
+
+
+/*footer*/
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px 20px;
+    width: 100%;
+    position: relative;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.footer-section h3 {
+    color: #008080;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #008080;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    background-color: #008080;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #006666;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+    color: #888;
+}
+
+
+
+
 
 
 #mentions {

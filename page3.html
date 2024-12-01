@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="style3.css">
     </head>
     <body>
-
         <header>
             <a href="logo.png">
                 <img src="logo.png" alt="Logo de votre site" id="logo">
@@ -18,15 +17,25 @@
         
         <a href="home.html" id="bouton_retour">retour</a>
 
-        
-        <p id="salle6">Salle 6 :</p>
-        <a id="indice1">indice 1</a>
-        <a id="indice2">indice 2</a>
+        <div class="bloc" id="bloc1">
+            <p id="salle">Salle 6 :</p>
+            <a id="indice1" onclick="afficherTexte('texte1')">indice 1</a>
+            <div id="indice1" class="texte-indice"></div>
+            <a id="indice2" onclick="afficherTexte('texte2')">indice 2</a>
+            <div id="indice2" class="texte-indice"></div>
+            <a id="indice3" onclick="afficherTexte('texte3')">indice 3</a>
+            <div id="indice3" class="texte-indice"></div>
+        </div>
 
-        <p id="salle5">Salle 5 :</p>
-        <a id="indice3">indice 3</a>
-        <a id="indice4">indice 4</a>
-
+        <div class="bloc" id="bloc2">
+            <p id="salle">Salle 5 :</p>
+            <a id="indice4" onclick="afficherTexte('texte4')">indice 4</a>
+            <div id="indice4" class="texte-indice"></div>
+            <a id="indice5" onclick="afficherTexte('texte5')">indice 5</a>
+            <div id="indice5" class="texte-indice"></div>
+            <a id="indice6" onclick="afficherTexte('texte6')">indice 6</a>
+            <div id="indice6" class="texte-indice"></div>
+        </div>
     </body>
-
+    <script src="page3.js"></script>
 </html>

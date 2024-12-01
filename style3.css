@@ -20,59 +20,43 @@ h1 {
 }
 
 
-
-#salle6 {
+#bloc1{
     position: absolute;
-    bottom: 450px;
-    left: 700px;
+    bottom: 320px;
+    left: center;
     font-size: 30px;
     color: antiquewhite;
+}
+
+#bloc2{
+    position: absolute;
+    bottom: 90px;
+    left: center;
+    font-size: 30px;
+    color: antiquewhite;
+}
+
+.bloc a {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.texte-indice {
+    margin-top: 10px;
+}
+
+#indice1, #indice2, #indice3, #indice4, #indice5, #indice6{
+    border-radius: 5px;
+    background-color: green;
+    cursor: pointer;
+}
+#indice:hover{
+    background-color: rgb(0, 105, 0);
+}
+
+#salle{
     text-decoration: underline;
 }
-
-#indice1 {
-    position: absolute;
-    bottom: 430px;
-    left: 700px;
-    font-size: 30px;
-    color: antiquewhite;
-}
-
-#indice2 {
-    position: absolute;
-    bottom: 395px;
-    left: 700px;
-    font-size: 30px;
-    color: antiquewhite;
-}
-
-
-#salle5 {
-    position: absolute;
-    bottom: 300px;
-    left: 700px;
-    font-size: 30px;
-    color: antiquewhite;
-    text-decoration: underline;
-}
-
-#indice3 {
-    position: absolute;
-    bottom: 280px;
-    left: 700px;
-    font-size: 30px;
-    color: antiquewhite;
-}
-
-#indice4 {
-    position: absolute;
-    bottom: 245px;
-    left: 700px;
-    font-size: 30px;
-    color: antiquewhite;
-}
-
-
 
 #bouton_retour {
     position: absolute;
@@ -103,4 +87,105 @@ header {
     left: 680px;
     width: 100px;
     cursor: pointer;
+}
+
+
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    body {
+        display: block;
+        padding: 20px;
+    }
+
+    h1 {
+        position: static;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+
+    #logo {
+        position: static;
+        width: 100px;
+        display: block;
+        margin: 20px auto;
+    }
+
+    #bouton_retour {
+        position: static;
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    #logo {
+        width: 80px;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    #logo {
+        width: 60px;
+    }
+}
+
+
+.texte-indice {
+    position: absolute;
+    left: 700px;
+    color: antiquewhite;
+    font-size: 25px;
+    display: none;
+    width: 300px; /* Ajoutez une largeur fixe */
+}
+
+/* Media Queries pour les textes d'indices */
+@media screen and (max-width: 1024px) {
+    .texte-indice {
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 20px;
+        width: 100%; /* Largeur totale sur écrans plus petits */
+        left: 0;
+        padding: 0 20px; /* Ajoutez un peu de padding */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .texte-indice {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .texte-indice {
+        font-size: 16px;
+    }
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .bloc a {
+        margin-bottom: 10px;
+    }
+
+    .texte-indice {
+        margin-top: 5px;
+    }
 }

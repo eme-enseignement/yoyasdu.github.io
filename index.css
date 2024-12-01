@@ -1,10 +1,13 @@
+/* Style de base */
 body {
-    background-color:azure;
+    background-color: azure;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 #bjr {
@@ -13,40 +16,141 @@ body {
     font-size: 35px;
     color: black;
     text-decoration: underline;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
-#BoutonRegistre {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    padding: 10px;
-    background-color: #008080;
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-header {
+/*escape eme*/
+#site1{
     position: absolute;
     top: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100px;
+    width: 100%;
+    max-width: 550px;
 }
-#eme {
-    position: absolute;
-    width: 550px;
+#eme1 {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
     border-radius: 15px;
     border-style: groove;
     border-color: black;
+    text-decoration: none;
     cursor: pointer;
 }
 #eme2 {
-    position: absolute;
-    top: 280px;
-    width: 100px;
+    position: relative;
+    margin-top: 20px;
     cursor: pointer;
+    text-align: center;
+}
+
+/*la maille d'or*/
+#site2{
+    position: absolute;
+    top: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 550px;
+}
+#maille1{
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    border-radius: 15px;
+    border-style: groove;
+    border-color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#maille2{
+    position: relative;
+    margin-top: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+
+
+/* Tablettes (768px et moins) */
+@media screen and (max-width: 768px) {
+    #bjr {
+        font-size: 28px;
+        top: 10px;
+    }
+
+    #site1 {
+        margin-left: 70px;
+        top: 150px;
+        max-width: 90%;
+    }
+    #eme1, #maille1 {
+        margin-right: 70px;
+        max-width: 90%;
+    }
+
+    #site2 {
+        margin-left: 70px;
+        top : 700px;
+        max-width: 90%;
+    }    
+}
+
+/* Mobiles en mode paysage (576px et moins) */
+@media screen and (max-width: 576px) {
+    #bjr {
+        font-size: 24px;
+        top: 60px;
+    }
+
+    #site1 {
+        top: 120px;
+    }
+
+    #site2 {
+        top: 500px;
+    }
+}
+
+/* Petits mobiles (375px et moins) */
+@media screen and (max-width: 375px) {
+    #bjr {
+        font-size: 20px;
+        top: 70px;
+    }
+
+    #site1 {
+        top: 140px;
+    }
+    #eme1, #maille1 {
+        max-width: 95%;
+    }
+    #eme2, #maille2 {
+        font-size: 14px;
+    }
+
+    #site2{
+        top: 400px;
+    }
+}
+
+/* Ajustement de la hauteur pour les écrans courts */
+@media screen and (max-height: 600px) {
+    #bjr {
+        font-size: 20px;
+    }
+    
+    #site1 {
+        top: 100px;
+    }
+    #site2{
+        top: 280px;
+    }
 }

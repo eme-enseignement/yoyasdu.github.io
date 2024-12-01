@@ -13,7 +13,7 @@ function afficherResultat() {
         //Page 122 à 154 HISTOIRE - Renaissance
 
     // SALLE 6
-    else if (motSaisi === 'Martin Luther') { //Dans la premiere boite - Fondateur de la Réforme protestante ? - Page 148
+    else if (motSaisi.toLowerCase() === 'martin luther') { //Dans la premiere boite - Fondateur de la Réforme protestante ? - Page 148
         resultatContainer.textContent = 'électricité';
     }else if (motSaisi === '1400/1600') { //tableau éléctrique - Dates de la Renaissances ? - Page 138
         resultatContainer.textContent = 'étiquette';
@@ -42,8 +42,7 @@ function afficherResultat() {
 
     else {
         document.resultatContainer.textContent = 'Aucun texte spécifique pour le mot saisi.';
-    } 
-
+    }
 }
 
 
