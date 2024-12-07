@@ -22,7 +22,10 @@
 
     <main>
         <input type="text" id="champSaisie" placeholder="Saisissez un mot">
-        <button onclick="afficherResultat()" class="button">Afficher le Résultat</button>
+        <button onclick="afficherResultat()" class="button" id="boutonson">Afficher le Résultat</button>
+        <audio id="sons">
+            <source id="bruit" src="" type="audio/mpeg">
+        </audio>
         
         <div id="resultat"></div>
 
@@ -34,6 +37,30 @@
         </div>
     </main>
 
+    <script>
+        const sounds = [
+            'sons/audio1.mp3',
+            'sons/audio2.mp3', 
+            'sons/audio3.mp3',
+        ];
+
+        const button = document.getElementById('boutonson');
+        const audioElement = document.getElementById('sons');
+        const soundSource = document.getElementById('bruit');
+
+        function playRandomSound() {
+            const randomIndex = Math.floor(Math.random() * sounds.length);
+            const selectedSound = sounds[randomIndex];
+            
+            soundSource.src = selectedSound;
+            audioElement.load();
+            audioElement.play().catch(error => {
+                console.error("Erreur de lecture audio:", error);
+            });
+        }
+
+        button.addEventListener('click', playRandomSound);
+    </script>
     <script src="home.js"></script>
 </body>
 </html>

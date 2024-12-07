@@ -14,41 +14,41 @@ body {
 
 /*images*/
 header {
+    top: 3%;
+    right: 3%;
     width: 100px;
     height: 100px;
     position: absolute;
 }
 #logo {
     position: absolute;
-    bottom: 707px;
-    left: 687px;
-    width: 100px;
+    width: 100%;
     cursor: pointer;
 }
 
+#image1, #image2, #image3{
+    width: 28%;
+}
 #image1 {
     position: absolute;
-    top: 75px;
-    left: 250px;
-    width: 450px;
+    top: 10%;
+    left: 10%;
     border-radius: 15px;
     border-style: dashed;
     border-color: black;
 }
 #image2 {
     position: absolute;
-    top: 430px;
-    right: 250px;
-    width: 450px;
+    top: 60%;
+    right: 10%;
     border-radius: 15px;
     border-style: dashed;
     border-color: black;
 }
 #image3 {
     position: absolute;
-    top: 785px;
-    left: 250px;
-    width: 450px;
+    top: 110%;
+    left: 10%;
     border-radius: 15px;
     border-style: dashed;
     border-color: black;
@@ -56,53 +56,53 @@ header {
 
 
 /*texts*/
+#titre1, #titre3, #text1, #text3, #autre1, #autre3, #second1 {
+    left: 45%;
+}
 /*Qui sommes nous ?*/
 #titre1 {
     position: absolute;
-    bottom: 580px;
-    left: 750px;
+    top: 10%;
     color: #333;
 }
 #text1 {
     position: absolute;
-    bottom: 520px;
-    left: 750px;
+    top: 15%;
     color: #555;
     margin-bottom: 20px;
 }
 #autre1 {
     position: absolute;
-    bottom: 490px;
-    left: 750px;
+    top: 18%;
     color: #555;
     margin-bottom: 20px;
 }
 #second1 {
     position: absolute;
-    bottom: 460px;
-    left: 750px;
+    top: 21%;
     color: #555;
     margin-bottom: 20px;
 }
 
+
 /*Notre mission*/
 #titre2 {
     position: absolute;
-    top: 410px;
-    left: 550px;
+    top: 60%;
+    right: 45%;
     color: #333;
 }
 #text2 {
     position: absolute;
-    top: 470px;
-    left: 420px;
+    top: 65%;
+    right:45%;
     color: #555;
     margin-bottom: 20px;
 }
 #autre2 {
     position: absolute;
-    top: 500px;
-    left: 420px;
+    top: 68%;
+    right:45%;
     color: #555;
     margin-bottom: 20px;
 }
@@ -110,34 +110,21 @@ header {
 /*Notre but*/
 #titre3 {
     position: absolute;
-    bottom: -130px;
-    left: 750px;
+    top: 110%;
     color: #333;
 }
 #text3 {
     position: absolute;
-    bottom: -190px;
-    left: 750px;
+    top: 115%;
     color: #555;
     margin-bottom: 20px;
 }
 #autre3 {
     position: absolute;
-    bottom: -220px;
-    left: 750px;
+    top: 118%;
     color: #555;
     margin-bottom: 20px;
 }
-
-/*merci*/
-#merci {
-    position: absolute;
-    top: 1150px;
-    font-size: 30px;
-    color: #555;
-    text-decoration: underline;
-}
-
 
 h2 {
     color: #008080;
@@ -146,9 +133,14 @@ h2 {
 
 
 
+
+
+
+
+
 /*Boutons*/
 #bouton_retour {
-    position: absolute;
+    position: static;
     top: 10px;
     left: 10px;
     padding: 10px;
@@ -162,56 +154,6 @@ h2 {
 
 #bouton_retour:hover {
     background-color: #006666;
-}
-
-
-/*TRAIT NOIR*/
-#trait {
-    position: absolute;
-    top: 1280px;
-    font-size: 30px;
-}
-
-
-/*info*/
-#tel1{
-    position: absolute;
-    top: 1350px;
-    left: 80px;
-    color: rgb(0, 187, 255);
-}
-#mail1{
-    position: absolute;
-    top: 1350px;
-    left: 250px;
-    color: rgb(0, 187, 255);
-}
-#nom1{
-    position: absolute;
-    top: 1330px;
-    left: 50px;
-    color: rgb(0, 187, 255);
-    text-decoration: underline;
-}
-
-#tel2{
-    position: absolute;
-    top: 1350px;
-    right: 265px;
-    color: rgb(0, 187, 255);
-}
-#mail2{
-    position: absolute;
-    top: 1350px;
-    right: 70px;
-    color: rgb(0, 187, 255);
-}
-#nom2{
-    position: absolute;
-    top: 1330px;
-    right: 350px;
-    color: rgb(0, 187, 255);
-    text-decoration: underline;
 }
 
 
@@ -315,4 +257,16 @@ h2 {
 #copyright:hover {
     color: rgb(0, 187, 255);
     text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    #titre1, #titre2, #titre3{
+        font-size: 20px;
+    }
+    #text1, #text2, #text3{
+        font-size: 16px;
+    }
+
+    #image1{
+    }
 }
